@@ -1,0 +1,120 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body basic setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+
+
+/* Top Navbar */
+.topnav {
+    width: 100%;
+    background: linear-gradient(90deg, #0d1b2a, #233b69); /* new gradient */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+/* Logo Text */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Top Navbar Links */
+.topnav-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.topnav-links ul li {
+    margin-left: 40px;
+}
+
+.topnav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.topnav-links ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Main container after top nav */
+.container {
+    display: flex;
+    margin-top: 70px; /* Equal to topnav height */
+}
+
+/* Side Navbar */
+.sidenav {
+    width: 250px;
+    height: calc(100vh - 70px); /* full height minus topnav */
+    background-color: #112d4e;
+    padding-top: 30px;
+    position: fixed;
+    top: 70px; /* starts after top nav */
+    left: 0;
+    
+}
+
+/* Side Navbar Links */
+.navlinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navlinks ul li {
+    width: 100%;
+}
+
+.navlinks ul li a {
+    display: block;
+    padding: 15px 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    
+}
+
+.topnav-links ul li a.active,
+.navlinks ul li a.active {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+
+
+.navlinks ul li a:hover {
+    background-color: #00bcd4;
+    color: #0d1b2a;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 270px; /* side nav width + gap */
+    padding: 30px;
+    margin-top: 90px; /* extra padding to avoid overlap */
+}

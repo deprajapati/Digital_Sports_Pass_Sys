@@ -1,0 +1,78 @@
+.validation-container {
+  padding: 30px;
+  margin-left: 270px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.title {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.scanner-section {
+  margin-bottom: 20px;
+}
+
+.or-divider {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #666;
+}
+
+.manual-form input {
+  padding: 10px;
+  width: 220px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.manual-form button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+.member-card {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.member-card h2{
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #007bff;
+}
+
+.member-card.active {
+  border-left: 10px solid #28a745;
+}
+
+.member-card.inactive {
+  border-left: 10px solid #dc3545;
+}
+
+.status-active {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-inactive {
+  color: #dc3545;
+  font-weight: bold;
+}
