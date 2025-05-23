@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+Backend/.env 
+# This is a sample .env file. Copy this file to .env and fill in the values.
