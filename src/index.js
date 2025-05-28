@@ -9,6 +9,8 @@ import Registration from './Registration';
 import Members from './Members';
 import IdCard from './IdCard';
 import Validation from './Validation';
+import Chatbot from './Chatbot';
+import './index.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +20,7 @@ const router = createBrowserRouter(
       <Route path='id-card' element={<IdCard/>}/>
       <Route path='Registration' element={<Registration/>}/>
       <Route path='Validation' element={<Validation/>}/>
+      <Route path='Chatbot' element={<Chatbot/>}/>
       </Route>
   )
 )

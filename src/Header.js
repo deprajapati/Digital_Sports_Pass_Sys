@@ -51,6 +51,7 @@ function Header() {
                                         Visit History
                                     </NavLink>
                                 </li>
+                                
                             </ul>
                         </div>
                     </nav>
