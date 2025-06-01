@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import registerRoutes from "./src/routes/registerRoutes.js";
 import chatbotRoutes from "./src/routes/chatbotRoutes.js"; // ✅ Add this
-
+import loginRoutes from "./src/routes/loginRoutes.js"; // ✅ Add this
 dotenv.config();
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use("/api", registerRoutes);
 app.use("/api/chatbot", chatbotRoutes); // ✅ Mount chatbot route
-
+app.use('/api', loginRoutes);
 mongoose
   .connect(process.env.MONGODB_URL)
   .then(() => {

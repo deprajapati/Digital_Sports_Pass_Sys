@@ -7,7 +7,6 @@ function App() {
   <router>
     <route>
       <Header/>
-      
     </route>
   </router>
     

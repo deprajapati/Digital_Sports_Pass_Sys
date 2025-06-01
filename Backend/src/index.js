@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./db/index.js";
 import registerRoutes from "./routes/registerRoutes.js";
-
+import loginRoutes from "./routes/loginRoutes.js";
 dotenv.config({ path: "./.env" });
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(express.json()); // Parse JSON bodies
 
 // Routes
 app.use("/api", registerRoutes);
-
+app.use("/api", loginRoutes);
 // Start Server
 connectDB()
   .then(() => {
