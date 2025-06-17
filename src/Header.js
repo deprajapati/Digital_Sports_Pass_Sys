@@ -46,11 +46,7 @@ function Header() {
                                         Validation
                                     </NavLink>
                                 </li>
-                                <li>
-                                    <NavLink to="/visit-history" className={({ isActive }) => (isActive ? "active" : "")}>
-                                        Visit History
-                                    </NavLink>
-                                </li>
+                            
                                 
                             </ul>
                         </div>
